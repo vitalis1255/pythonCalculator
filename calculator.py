@@ -4,6 +4,7 @@ root = Tk()
 root.title("My Calculator")
 root.geometry("300x450")
 root.resizable(width=False,height=False)
+root.iconbitmap('C:/Users/Engr. V. I Onyeke/Documents/pythonCalculator/NYSC.jpg')#How to change the icon of tkinter window.
 
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0,column=0, columnspan=3, padx=10,pady=10)
@@ -113,5 +114,6 @@ button_clear.grid(row=4, column=1,columnspan=2)
 button_subtract.grid(row=6,column=0)
 button_multiply.grid(row=6,column=1)
 button_divide.grid(row=6, column=2)
+
 
 root.mainloop()
