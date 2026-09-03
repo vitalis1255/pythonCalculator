@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("My Calculator")
-root.geometry("300x450")
+root.geometry("300x500")
 root.resizable(width=False,height=False)
 root.iconbitmap('C:/Users/Engr. V. I Onyeke/Documents/pythonCalculator/NYSC.jpg')#How to change the icon of tkinter window.
 
@@ -90,6 +90,7 @@ button_clear = Button(root, text="Clear",padx=79,pady=20, command=button_clear)
 button_subtract = Button(root, text="-",padx=41,pady=20, command=button_subtraction)
 button_multiply = Button(root, text="x",padx=40,pady=20, command=button_multiplication)
 button_divide = Button(root, text="/",padx=41,pady=20, command=button_division)
+button_quit = Button(root, text="Exit Program",padx=40,pady=20,command=root.quit)
 
 
 #Put buttons on the screen
@@ -115,5 +116,6 @@ button_subtract.grid(row=6,column=0)
 button_multiply.grid(row=6,column=1)
 button_divide.grid(row=6, column=2)
 
+button_quit.grid(row=7,column=0,columnspan=3)
 
 root.mainloop()
