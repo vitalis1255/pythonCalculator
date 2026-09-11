@@ -3,7 +3,7 @@ import sqlite3
 
 
 root = Tk()
-root.title("Using Databases")
+root.title("Record App")
 root.geometry("320x500")
 root.resizable(width=False,height=False)
 
@@ -62,7 +62,10 @@ def save_edited():
 
 #create update function
 def edit():
+  
+  #make editor global
   global editor
+
   #create new window
   editor = Tk()
   editor.title("Update A Record")
